@@ -1,4 +1,4 @@
-import 'dart:ffi';
+
 import 'dart:io';
 
 // import 'package:test/test.dart';
@@ -130,25 +130,25 @@ void main() {
 
 // Задача №3
 // Необходимо суммировать все нечётные целые числа в диапазоне, который введёт пользователь с клавиатуры.
-int start;
-int end;
-int summ = 0;
-do {
-  print("Введите начало диапазона");
- start = int.parse(stdin.readLineSync()!);
- print("Введите конец диапазона");
- end = int.parse(stdin.readLineSync()!);
-  if(start > end) {
-    print("Ошибка: Начало диапазона больше конца. Повторите ввод.");
-  }
-} while (start > end);
-for (int i = start; i <= end; i++) {
-  if (i % 2 != 0) {
-    summ += i;
-  }
+// int start;
+// int end;
+// int summ = 0;
+// do {
+//   print("Введите начало диапазона");
+//  start = int.parse(stdin.readLineSync()!);
+//  print("Введите конец диапазона");
+//  end = int.parse(stdin.readLineSync()!);
+//   if(start > end) {
+//     print("Ошибка: Начало диапазона больше конца. Повторите ввод.");
+//   }
+// } while (start > end);
+// for (int i = start; i <= end; i++) {
+//   if (i % 2 != 0) {
+//     summ += i;
+//   }
   
-}
-print("Сумма нечетных чисел в вашем диапазоне - $summ");
+// }
+// print("Сумма нечетных чисел в вашем диапазоне - $summ");
 
 
 }
